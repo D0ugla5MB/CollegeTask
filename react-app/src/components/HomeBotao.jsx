@@ -1,11 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-export function BotaoHome() {
-    return (
-        <button type="button">
-            <Link to="/">Home</Link>
-        </button>
+export default function HomeBotao(){
+    return(
+        <>
+            <Link to={"/"}>
+                <button>Início</button>
+            </Link>
+        </>
     );
 }
-

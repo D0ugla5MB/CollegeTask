@@ -1,12 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import TelaSelecao from './components/Home';
 import './App.css'
+import TelaInicial from './components/Home';
 
 function App() {
   return (
     <div>
-      <TelaSelecao />
+      <TelaInicial />
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.spaced-span {
+    display: table-cell;
+    margin: 5px;
+    padding: 5px;
+}
+
+.button-content-color {
+    color: red;
+}

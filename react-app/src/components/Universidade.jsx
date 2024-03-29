@@ -1,14 +1,19 @@
 import React from 'react';
-import { getPerson, rng } from '../utils/myUtils.mjs';
-
-function UniversidadeView() {
-    // Lógica específica para a visualização da instituição, se necessário
-
+import  HomeBotao  from "./HomeBotao";
+import Cursos from "./UniversidadeCursos";
+import { Form } from './UniversidadeCursos';
+import UniversidadeMenu from './UniversidadeMenu';
+export default function Universidade() {
     return (
-        <div>
-            <h1>{`${getPerson().firstName}`}</h1>            
-        </div>
+        <>
+            <div>
+                <UniversidadeMenu/>
+                <br></br>
+                <HomeBotao />
+            </div>
+        </>
     );
 }
 
-export default UniversidadeView;
+
+
