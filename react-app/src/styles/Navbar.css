@@ -1,26 +1,43 @@
+/* Navbar container */
 .navbar {
+    overflow: hidden;
     background-color: #333;
-    padding: 10px 0;
+    /* Background color */
 }
 
-.navbar-menu {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.navbar-menu li {
-    padding: 10px 20px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Links inside the navbar */
+.navbar li {
+    flex: 10%;
+    /* Set each list item to occupy 25% of the container width */
+    text-align: center;
 }
 
-.navbar-menu li.active {
+.navbar a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    /* Padding for each link */
+    text-decoration: none;
+}
+
+/* Change background color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    /* Background color on hover */
+    color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
     background-color: #555;
-}
-
-.navbar-menu li:hover {
-    background-color: #555;
+    /* Background color of active/current link */
+    color: white;
 }

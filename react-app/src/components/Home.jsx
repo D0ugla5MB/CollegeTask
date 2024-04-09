@@ -1,12 +1,14 @@
+import '../styles/Home.css'
 import React from 'react'
-import { Link } from 'react-router-dom';
+import HomeNav from './HomeNav';
 
-export default function TelaInicial(){
-    return(
-        <>
-            <Link to={"./universidade"}><button type="button" >Login do Servidor</button></Link>
-            <Link><button type="button" >Login do Aluno</button></Link>
-            <Link><button type="button" >Login do Professor</button></Link>
-        </>
-    );
+function Home() {
+  return (
+    <>
+      <h1>Tela Inicial</h1>
+      <HomeNav />
+    </>
+  );
+
 }
+export default Home
